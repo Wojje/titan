@@ -34,5 +34,5 @@ if [[ "${DEVICES}" = "" ]]; then
   exit 1
 fi
 
-docker run --name $USER $CUDA_SO $DEVICES "$@"
+docker run $CUDA_SO $DEVICES "$@"
 
