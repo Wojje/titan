@@ -10,5 +10,5 @@ mkdir log
 qsub -cwd \
   -e ./log/$project_run.error \
   -o ./log/$project_run.log \
-  ./docker/$project_run
+  ./src/$project_run
 
